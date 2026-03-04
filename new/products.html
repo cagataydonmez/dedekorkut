@@ -4,25 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Products | Dede Korkut Pedal</title>
-  <meta name="description" content="Compare Ferromagnetic, Reverberant Reverb, Dynamic Tremolo, Crowded Chorus, and Many-Phased God from Dede Korkut Pedal." />
+  <meta name="description" content="Current DSP lineup and archived legacy models from Dede Korkut Pedal." />
   <meta property="og:title" content="Products | Dede Korkut Pedal" />
-  <meta property="og:description" content="Five DSP guitar pedals designed for expressive modern rigs." />
+  <meta property="og:description" content="Filter between the DSP line and legacy archive." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="/new/products.html" />
-  <meta property="og:image" content="/assets/images/ferromagnetic-11-676x676.jpg" />
+  <meta property="og:image" content="https://www.dedekorkutpedal.com/assets/images/ferromagnetic-14-877x800.jpg" />
   <link rel="icon" href="/assets/images/logo-dk-128x128-1.png" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <header>
     <div class="container nav">
-      <a href="index.html"><img class="logo" src="/assets/images/logowhite400px-400x66.png" alt="Dede Korkut Pedal logo" /></a>
-      <nav class="nav-links">
+      <a href="index.html" aria-label="Dede Korkut Pedal home"><img class="logo" src="/assets/images/logowhite400px-400x66.png" alt="Dede Korkut Pedal logo" /></a>
+      <nav class="nav-links" aria-label="Primary navigation">
         <a href="index.html">Home</a>
         <a class="active" href="products.html">Products</a>
-        <a href="legacy.html">Legacy</a>
+        <a href="legacy.html">Archive</a>
         <a href="about.html">About</a>
-        <a href="faq.html">FAQ</a>
         <a href="contact.html">Contact</a>
       </nav>
       <button class="btn btn-ghost menu-btn" type="button" aria-expanded="false" aria-label="Toggle menu">Menu</button>
@@ -31,66 +30,27 @@
 
   <main class="section">
     <div class="container">
-      <p class="eyebrow">Product Lineup</p>
-      <h1>Choose your tone engine.</h1>
-      <p class="lead">From tape-inspired delay to wide-space reverb, dynamic tremolo, chorus/vibrato, and multi-stage phaser textures.</p>
+      <p class="eyebrow">Catalog</p>
+      <h1>Product Line</h1>
+      <p class="lead">Engineering-forward effects with practical control layouts.</p>
 
-      <div class="grid-3" style="margin-top: 1.2rem;">
-        <article class="card product-card">
-          <img src="/assets/images/ferromagnetic-11-676x676.jpg" loading="lazy" alt="Ferromagnetic pedal" width="676" height="676" />
-          <h3>Ferromagnetic</h3>
-          <p class="product-meta">Multi-head tape delay workflow with rhythmic head options and analog-style movement.</p>
-          <a class="btn btn-primary" href="products/ferromagnetic.html">See Details</a>
-        </article>
-
-        <article class="card product-card">
-          <img src="/assets/images/reverberant-780x780.jpg" loading="lazy" alt="Reverberant Reverb pedal" width="780" height="780" />
-          <h3>Reverberant Reverb</h3>
-          <p class="product-meta">Six reverb algorithms from practical room support to expansive shimmer atmospheres.</p>
-          <a class="btn btn-primary" href="products/reverberant.html">See Details</a>
-        </article>
-
-        <article class="card product-card">
-          <img src="/assets/images/dynamictremolo-780x780.jpg" loading="lazy" alt="Dynamic Tremolo pedal" width="780" height="780" />
-          <h3>Dynamic Tremolo</h3>
-          <p class="product-meta">Touch-sensitive tremolo with waveform options plus integrated ambience controls.</p>
-          <a class="btn btn-primary" href="products/dynamictremolo.html">See Details</a>
-        </article>
-
-        <article class="card product-card">
-          <img src="/assets/images/crowdedchorus-780x780.jpg" loading="lazy" alt="Crowded Chorus pedal" width="780" height="780" />
-          <h3>Crowded Chorus</h3>
-          <p class="product-meta">Dynamic chorus and vibrato platform with musical shape control and depth range.</p>
-          <a class="btn btn-primary" href="products/crowdedchorus.html">See Details</a>
-        </article>
-
-        <article class="card product-card">
-          <img src="/assets/images/manyphasedgod-780x780.jpg" loading="lazy" alt="Many-Phased God pedal" width="780" height="780" />
-          <h3>Many-Phased God</h3>
-          <p class="product-meta">Multi-stage phaser voice for subtle sweep, vintage swirl, and deep resonant movement.</p>
-          <a class="btn btn-primary" href="products/manyphasedgod.html">See Details</a>
-        </article>
+      <div class="filter-tabs" role="tablist" aria-label="Product filters">
+        <button class="filter-tab active" type="button" role="tab" aria-selected="true" data-filter="dsp">DSP Line</button>
+        <button class="filter-tab" type="button" role="tab" aria-selected="false" data-filter="legacy">Legacy</button>
       </div>
 
-      <div class="card" style="margin-top: 1.6rem;">
-        <p class="eyebrow">Archive</p>
-        <h2>Looking for older models?</h2>
-        <p class="muted">See the social-era archive and legacy pedals catalog.</p>
-        <a class="btn btn-ghost" href="legacy.html">Open Legacy Pedals</a>
-      </div>
+      <div class="grid-3" data-products-grid aria-live="polite"></div>
     </div>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <p class="muted">© Dede Korkut Pedal</p>
-      <div class="social-links">
-        <a href="https://www.instagram.com/dedekorkutpedal/" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="https://www.youtube.com/channel/UCFWetD-3J9mvNCPNFQUM3RA" target="_blank" rel="noopener noreferrer">YouTube</a>
-        <a href="https://www.facebook.com/dedekorkutpedal/" target="_blank" rel="noopener noreferrer">Facebook</a>
-      </div>
+      <p class="muted">Buy current products on Reverb. Legacy models are archived.</p>
     </div>
   </footer>
+
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/products-render.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

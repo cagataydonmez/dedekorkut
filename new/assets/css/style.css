@@ -49,6 +49,12 @@ a {
   text-decoration: none;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
 main {
   overflow: clip;
 }
@@ -262,6 +268,26 @@ header {
   border: 1px solid var(--line);
 }
 
+.product-card-image {
+  width: 100%;
+}
+
+.product-category {
+  color: var(--accent);
+  font-size: 0.87rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.45rem;
+}
+
+.product-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 0.8rem;
+}
+
 .split > img,
 .split > figure > img {
   width: 100%;
@@ -283,6 +309,10 @@ header {
   margin-top: 1rem;
   color: var(--muted);
   font-size: 0.92rem;
+}
+
+.section-tight {
+  margin-top: 1.2rem;
 }
 
 .social-links {
@@ -409,6 +439,45 @@ header {
   color: var(--muted);
 }
 
+.filter-tabs {
+  display: inline-flex;
+  gap: 0.5rem;
+  padding: 0.35rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  margin: 0.75rem 0 1.4rem;
+}
+
+.filter-tab {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.5rem 0.9rem;
+  color: var(--muted);
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+
+.filter-tab.active {
+  color: #0d1224;
+  background: linear-gradient(120deg, var(--brand), var(--brand-strong));
+}
+
+.legacy-card .eyebrow {
+  margin-bottom: 0.25rem;
+}
+
+.gallery-card {
+  padding: 0.6rem;
+}
+
+.gallery-card img {
+  border-radius: 14px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
 @media (max-width: 960px) {
   .hero-grid,
   .split,
@@ -440,6 +509,16 @@ header {
 
   .menu-btn {
     display: inline-flex;
+  }
+
+  .filter-tabs {
+    display: flex;
+    width: 100%;
+  }
+
+  .filter-tab {
+    width: 100%;
+    text-align: center;
   }
 }
 

@@ -9,13 +9,15 @@
 - `privacy.html`, `terms.html`
 - `assets/css/style.css` — shared design system
 - `assets/js/main.js` — minimal nav interaction
+- `assets/js/products-data.js` — single source-of-truth product dataset
+- `assets/js/products-render.js` — shared render layer (home/products/detail/legacy)
 - Reuses brand images directly from `/assets/images/*` (no duplicate copies in `/new/assets/images`)
 - `sitemap.xml`, `robots.txt`
 
 ## Editing products
-1. Edit card-level summaries in `products.html`.
-2. Edit deep marketing copy/spec table inside `products/*.html`.
-3. Replace image files in `assets/images/` and keep dimensions sensible.
+1. Edit product and legacy entries in `assets/js/products-data.js`.
+2. Keep `products/*.html` files as route wrappers with `data-product-detail` slugs.
+3. Update shared rendering logic in `assets/js/products-render.js` only if layout/behavior changes are needed.
 
 ## Deployment (Nginx)
 Use `/new` as site root for direct static hosting.
