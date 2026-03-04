@@ -40,6 +40,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -128,6 +129,7 @@ header {
   justify-content: space-between;
   min-height: 76px;
   gap: 1rem;
+  position: relative;
 }
 
 .logo {
@@ -154,6 +156,7 @@ header {
 
 .menu-btn {
   display: none;
+  touch-action: manipulation;
 }
 
 .btn {
@@ -252,10 +255,53 @@ header {
 }
 
 .product-card img {
+  width: 100%;
   border-radius: 12px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border: 1px solid var(--line);
+}
+
+.split > img,
+.split > figure > img {
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  object-fit: cover;
+}
+
+.product-hero-image {
+  width: min(100%, 560px);
+  aspect-ratio: 1 / 1;
+  object-fit: contain !important;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 0.9rem;
+  margin-inline: auto;
+}
+
+.note {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+}
+
+.social-links a:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .product-meta {

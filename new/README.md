@@ -3,6 +3,7 @@
 ## Folder structure
 - `index.html` — landing page
 - `products.html` — product listing
+- `legacy.html` — legacy/social archive
 - `products/*.html` — individual product marketing pages
 - `about.html`, `contact.html`, `faq.html`
 - `privacy.html`, `terms.html`
