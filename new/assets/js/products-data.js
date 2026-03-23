@@ -18,10 +18,10 @@
       controls: ["Time / Speed", "Tape Age", "Head Distance", "Mix", "Feedback"],
       specs: ["Designed for repeatable live settings", "Mono operation", "Standard 9V pedalboard power"],
       images: [
-        "assets/images/ferromagnetic-14-877x800.jpg",
+        "assets/images/ferromagnetic-face-800x800.jpg",
         "assets/images/ferromagnetic-5-780x780.jpg"
       ],
-      primaryImageAlt: "Ferromagnetic delay pedal shown from the front with tape-style controls and three head selections.",
+      primaryImageAlt: "Ferromagnetic pedal close-up centered on the faceplate, knobs, and labeling.",
       galleryAlts: [
         "Ferromagnetic pedal front view showing the full control layout.",
         "Ferromagnetic pedal angled detail view highlighting the enclosure finish and switch layout."
