@@ -5,3 +5,10 @@
 *.gif
 *.sqlite
 *.db
+!new/assets/
+!new/assets/images/
+!new/assets/images/*.jpg
+!new/assets/images/*.jpeg
+!new/assets/images/*.png
+!new/assets/images/*.webp
+!new/assets/images/*.gif
