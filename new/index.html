@@ -31,29 +31,51 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero hero-signal" data-signal-hero>
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Dede Korkut Pedal</p>
           <p class="hero-kicker">Engineered with ears.</p>
           <h1>Pedals that feel deliberate before they feel flashy.</h1>
           <p class="lead">Built in Turkey for players who want strong functions, calm control layouts, and tones that stay musical under the hands, on the board, and in the room.</p>
+          <div class="signal-tags" aria-label="Brand qualities">
+            <span>Movement</span>
+            <span>Space</span>
+            <span>Response</span>
+          </div>
           <div class="product-actions">
             <a class="btn btn-primary" href="products.html">Explore Products</a>
             <a class="btn btn-ghost" href="legacy.html">View Archive</a>
           </div>
         </div>
-        <figure class="hero-art">
-          <img
-            src="assets/images/ferromagnetic-14-877x800.jpg"
-            srcset="assets/images/ferromagnetic-5-780x780.jpg 780w, assets/images/ferromagnetic-14-877x800.jpg 877w"
-            sizes="(max-width: 960px) 92vw, 42vw"
-            alt="Ferromagnetic delay pedal with a tape-inspired control layout."
-            width="877"
-            height="800"
-            fetchpriority="high"
-          />
-        </figure>
+        <div class="signal-field" aria-hidden="true">
+          <div class="signal-grid"></div>
+          <div class="signal-line signal-line-a"></div>
+          <div class="signal-line signal-line-b"></div>
+          <figure class="signal-stage" data-signal-layer="0.1">
+            <img
+              src="assets/images/ferromagnetic-14-877x800.jpg"
+              srcset="assets/images/ferromagnetic-5-780x780.jpg 780w, assets/images/ferromagnetic-14-877x800.jpg 877w"
+              sizes="(max-width: 960px) 92vw, 42vw"
+              alt=""
+              width="877"
+              height="800"
+              fetchpriority="high"
+            />
+          </figure>
+          <figure class="signal-fragment signal-fragment-wide" data-signal-layer="0.2">
+            <img src="assets/images/ferromagnetic-product-page3-1740x900.jpg" alt="" width="1740" height="900" loading="lazy" />
+          </figure>
+          <figure class="signal-fragment signal-fragment-plate" data-signal-layer="0.35">
+            <img src="assets/images/reverberant-2-2000x1333.jpg" alt="" width="2000" height="1333" loading="lazy" />
+          </figure>
+          <figure class="signal-fragment signal-fragment-pulse" data-signal-layer="0.45">
+            <img src="assets/images/dynamictremolo-2-780x780.jpg" alt="" width="780" height="780" loading="lazy" />
+          </figure>
+          <div class="signal-node signal-node-a">Tape character</div>
+          <div class="signal-node signal-node-b">Playable depth</div>
+          <div class="signal-node signal-node-c">Stage recall</div>
+        </div>
         <aside class="hero-note">
           <p class="eyebrow">Workshop Note</p>
           <p>Every pedal starts with a practical question: how quickly can a player find the right movement, space, or texture without breaking the flow of the performance?</p>
@@ -127,6 +149,7 @@
 
   <script src="assets/js/products-data.js"></script>
   <script src="assets/js/products-render.js"></script>
+  <script src="assets/js/index.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
