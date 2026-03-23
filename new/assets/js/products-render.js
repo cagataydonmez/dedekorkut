@@ -61,7 +61,7 @@
   function renderFeatured() {
     const host = document.querySelector("[data-featured-products]");
     if (!host) return;
-    host.innerHTML = data.modernProducts.map(productCard).join("");
+    host.innerHTML = data.modernProducts.slice(0, 4).map(productCard).join("");
   }
 
   function renderProductsPage() {
@@ -70,6 +70,7 @@
 
     const filters = Array.from(document.querySelectorAll("[data-filter]"));
     const render = (mode) => {
+      host.dataset.mode = mode;
       host.innerHTML = mode === "legacy"
         ? data.legacyProducts.map(legacyCard).join("")
         : data.modernProducts.map(productCard).join("");

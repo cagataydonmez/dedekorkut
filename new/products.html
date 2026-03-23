@@ -29,17 +29,27 @@
   </header>
 
   <main class="section">
-    <div class="container">
-      <p class="eyebrow">Catalog</p>
-      <h1>Current Product Line</h1>
-      <p class="lead">Discover what each pedal does well, how it feels under the fingers, and where it fits in a real rig.</p>
-
-      <div class="filter-tabs" aria-label="Product filters">
-        <button class="filter-tab" type="button" aria-pressed="true" data-filter="dsp">DSP Line</button>
-        <button class="filter-tab" type="button" aria-pressed="false" data-filter="legacy">Legacy Archive</button>
+    <div class="container catalog-shell">
+      <div class="catalog-intro">
+        <div>
+          <p class="eyebrow">Catalog</p>
+          <h1>Choose by movement, space, or response.</h1>
+        </div>
+        <div>
+          <p class="lead">Discover what each pedal does well, how it feels under the fingers, and where it fits in a real rig instead of reading through a flat spec list.</p>
+          <p class="catalog-note">The DSP line is the current chapter. The archive keeps the earlier analog history visible without pretending it is the same product era.</p>
+        </div>
       </div>
 
-      <div class="grid-3" data-products-grid aria-live="polite"></div>
+      <div class="catalog-controls">
+        <div class="filter-tabs" aria-label="Product filters">
+          <button class="filter-tab" type="button" aria-pressed="true" data-filter="dsp">Current DSP Line</button>
+          <button class="filter-tab" type="button" aria-pressed="false" data-filter="legacy">Archive / Legacy</button>
+        </div>
+        <p class="catalog-rail">Start with delay and reverb if you need space on the board. Reach for modulation when the goal is movement that stays musical under the hands.</p>
+      </div>
+
+      <div class="catalog-grid" data-products-grid data-mode="dsp" aria-live="polite"></div>
     </div>
   </main>
 

@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const nav = document.querySelector(".nav");
   const menuButton = document.querySelector(".menu-btn");
   const navLinks = document.querySelector(".nav-links");
-  const themeLabel = {
-    light: "Light",
-    dark: "Dark"
+  const themeGlyph = {
+    light: "☼",
+    dark: "☾"
   };
 
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
@@ -20,8 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     controls.className = "nav-controls";
     controls.innerHTML = `
       <button class="theme-toggle" type="button" aria-pressed="false">
-        <span aria-hidden="true">Theme</span>
-        <span data-theme-label></span>
+        <span aria-hidden="true" data-theme-glyph></span>
       </button>
     `;
 
@@ -34,19 +33,19 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const themeButton = document.querySelector(".theme-toggle");
-  const themeLabelNode = document.querySelector("[data-theme-label]");
+  const themeGlyphNode = document.querySelector("[data-theme-glyph]");
 
   const appliedTheme = () => root.dataset.theme || (prefersDark.matches ? "dark" : "light");
 
   const syncThemeButton = () => {
-    if (!themeButton || !themeLabelNode) {
+    if (!themeButton || !themeGlyphNode) {
       return;
     }
 
     const current = appliedTheme();
     themeButton.setAttribute("aria-label", `Switch to ${current === "dark" ? "light" : "dark"} theme`);
     themeButton.setAttribute("aria-pressed", String(current === "dark"));
-    themeLabelNode.textContent = themeLabel[current];
+    themeGlyphNode.textContent = themeGlyph[current];
   };
 
   syncThemeButton();
