@@ -71,21 +71,40 @@
         </div>
       </div>
 
-      <figure class="hero-art">
-        <img class="product-hero-image" src="../assets/images/ferromagnetic-14-877x800.jpg" alt="Ferromagnetic delay pedal shown from the front with tape-style controls and three head selections." width="877" height="800" />
-      </figure>
+      <div class="product-gallery" data-gallery>
+        <figure class="gallery-stage hero-art">
+          <img
+            class="product-hero-image"
+            data-gallery-stage
+            src="../assets/images/ferromagnetic-14-877x800.jpg"
+            alt="Ferromagnetic delay pedal shown from the front with tape-style controls and three head selections."
+            width="877"
+            height="800"
+          />
+        </figure>
+        <div class="gallery-meta">
+          <h2>Gallery</h2>
+          <p class="gallery-caption" data-gallery-caption>Front view with the full tape-inspired control layout and three-head switching on the face of the pedal.</p>
+          <p class="gallery-hint">Tap a detail view to inspect finish, layout, and wider product photography from the earlier site.</p>
+        </div>
+        <div class="gallery-thumbs" role="group" aria-label="Ferromagnetic image gallery">
+          <button class="gallery-thumb" type="button" aria-pressed="true" data-gallery-item data-image="../assets/images/ferromagnetic-14-877x800.jpg" data-alt="Ferromagnetic delay pedal shown from the front with tape-style controls and three head selections." data-caption="Front view with the full tape-inspired control layout and three-head switching on the face of the pedal.">
+            <span class="gallery-thumb-image"><img src="../assets/images/ferromagnetic-14-877x800.jpg" alt="" width="877" height="800" loading="lazy" /></span>
+            <span class="gallery-thumb-label">Front Layout</span>
+          </button>
+          <button class="gallery-thumb" type="button" aria-pressed="false" data-gallery-item data-image="../../assets/images/ferromagnetic-product-page3-1740x900.jpg" data-alt="Ferromagnetic pedal shown in a wide product photograph with the enclosure and knobs lit from above." data-caption="Wider product photograph that shows how the enclosure and knob spacing read in a more atmospheric setting.">
+            <span class="gallery-thumb-image"><img src="../../assets/images/ferromagnetic-product-page3-1740x900.jpg" alt="" width="1740" height="900" loading="lazy" /></span>
+            <span class="gallery-thumb-label">Wide Detail</span>
+          </button>
+          <button class="gallery-thumb" type="button" aria-pressed="false" data-gallery-item data-image="../../assets/images/ferromagnetic-face-800x800.jpg" data-alt="Ferromagnetic pedal close-up centered on the faceplate, knobs, and labeling." data-caption="Closer faceplate detail for reading the control labels and enclosure finish more directly.">
+            <span class="gallery-thumb-image"><img src="../../assets/images/ferromagnetic-face-800x800.jpg" alt="" width="800" height="800" loading="lazy" /></span>
+            <span class="gallery-thumb-label">Face Detail</span>
+          </button>
+        </div>
+      </div>
     </div>
 
-    <div class="container section">
-      <h2>Gallery</h2>
-      <div class="grid-2">
-        <figure class="card gallery-card">
-          <img src="../assets/images/ferromagnetic-14-877x800.jpg" alt="Ferromagnetic pedal front view showing the full control layout." width="877" height="800" loading="lazy" />
-        </figure>
-        <figure class="card gallery-card">
-          <img src="../assets/images/ferromagnetic-5-780x780.jpg" alt="Ferromagnetic pedal angled detail view highlighting the enclosure finish and switch layout." width="780" height="780" loading="lazy" />
-        </figure>
-      </div>
+    <div class="container">
       <a class="back-link" href="../products.html">← Back to products</a>
     </div>
   </main>
@@ -96,6 +115,7 @@
     </div>
   </footer>
 
+  <script src="../assets/js/gallery.js"></script>
   <script src="../assets/js/main.js"></script>
 </body>
 </html>

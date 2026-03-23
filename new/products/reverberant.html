@@ -70,9 +70,37 @@
         </div>
       </div>
 
-      <figure class="hero-art">
-        <img class="product-hero-image" src="../assets/images/reverberant-780x780.jpg" alt="Reverberant pedal front view showing five controls for decay, pre-delay, tone, space, and mix." width="780" height="780" />
-      </figure>
+      <div class="product-gallery" data-gallery>
+        <figure class="gallery-stage hero-art">
+          <img
+            class="product-hero-image"
+            data-gallery-stage
+            src="../assets/images/reverberant-780x780.jpg"
+            alt="Reverberant pedal front view showing five controls for decay, pre-delay, tone, space, and mix."
+            width="780"
+            height="780"
+          />
+        </figure>
+        <div class="gallery-meta">
+          <h2>Gallery</h2>
+          <p class="gallery-caption" data-gallery-caption>Front layout showing the full five-control interface used to move between shorter utility spaces and larger ambient settings.</p>
+          <p class="gallery-hint">The wide legacy-site photographs help this pedal feel less like a product tile and more like a real object on the board.</p>
+        </div>
+        <div class="gallery-thumbs" role="group" aria-label="Reverberant image gallery">
+          <button class="gallery-thumb" type="button" aria-pressed="true" data-gallery-item data-image="../assets/images/reverberant-780x780.jpg" data-alt="Reverberant pedal front view showing five controls for decay, pre-delay, tone, space, and mix." data-caption="Front layout showing the full five-control interface used to move between shorter utility spaces and larger ambient settings.">
+            <span class="gallery-thumb-image"><img src="../assets/images/reverberant-780x780.jpg" alt="" width="780" height="780" loading="lazy" /></span>
+            <span class="gallery-thumb-label">Front Layout</span>
+          </button>
+          <button class="gallery-thumb" type="button" aria-pressed="false" data-gallery-item data-image="../assets/images/reverberant-2-2000x1333.jpg" data-alt="Reverberant pedal shown in a three-quarter product photograph with the enclosure lit against a darker background." data-caption="Three-quarter product photograph that shows the enclosure color and overall shape more clearly than the square catalog crop.">
+            <span class="gallery-thumb-image"><img src="../assets/images/reverberant-2-2000x1333.jpg" alt="" width="2000" height="1333" loading="lazy" /></span>
+            <span class="gallery-thumb-label">Three-Quarter View</span>
+          </button>
+          <button class="gallery-thumb" type="button" aria-pressed="false" data-gallery-item data-image="../../assets/images/reverberant-2000x1333.jpg" data-alt="Reverberant pedal photographed from the front on a darker surface with more surrounding space." data-caption="Wider product shot from the original site for a calmer, more atmospheric view of the pedal in context.">
+            <span class="gallery-thumb-image"><img src="../../assets/images/reverberant-2000x1333.jpg" alt="" width="2000" height="1333" loading="lazy" /></span>
+            <span class="gallery-thumb-label">Atmospheric View</span>
+          </button>
+        </div>
+      </div>
     </div>
 
     <div class="container">
@@ -86,6 +114,7 @@
     </div>
   </footer>
 
+  <script src="../assets/js/gallery.js"></script>
   <script src="../assets/js/main.js"></script>
 </body>
 </html>
