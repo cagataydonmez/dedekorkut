@@ -139,15 +139,15 @@
       slug: "deli-dumrul",
       name: "Deli Dumrul",
       category: "High Gain Distortion",
-      status: "Legacy / Archived",
+      status: "Archived Analog Model",
       description: "An early-era handmade analog distortion from the brand's first production chapter.",
       videoUrl: ""
     },
     {
       slug: "1513",
       name: "1513",
-      category: "Legacy model",
-      status: "Legacy / Archived",
+      category: "Archived Analog Model",
+      status: "Archived Analog Model",
       description: "A limited, early analog model preserved here for archive and brand history.",
       videoUrl: ""
     },
@@ -155,7 +155,7 @@
       slug: "nemrut",
       name: "Nemrut",
       category: "Distortion",
-      status: "Legacy / Archived",
+      status: "Archived Analog Model",
       description: "A discontinued analog distortion model from the pre-DSP period of Dede Korkut Pedal.",
       videoUrl: ""
     }
