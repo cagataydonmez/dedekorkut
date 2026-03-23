@@ -8,16 +8,16 @@
 - `about.html`, `contact.html`, `faq.html`
 - `privacy.html`, `terms.html`
 - `assets/css/style.css` — shared design system
-- `assets/js/main.js` — minimal nav interaction
+- `assets/js/main.js` — nav + theme interaction
 - `assets/js/products-data.js` — single source-of-truth product dataset
-- `assets/js/products-render.js` — shared render layer (home/products/detail/legacy)
-- Reuses brand images directly from `/assets/images/*` (no duplicate copies in `/new/assets/images`)
+- `assets/js/products-render.js` — shared render layer for home / products / legacy listings
+- `assets/images/*` — local product and brand images used by the `/new` site bundle
 - `sitemap.xml`, `robots.txt`
 
 ## Editing products
 1. Edit product and legacy entries in `assets/js/products-data.js`.
-2. Keep `products/*.html` files as route wrappers with `data-product-detail` slugs.
-3. Update shared rendering logic in `assets/js/products-render.js` only if layout/behavior changes are needed.
+2. Edit `products/*.html` directly for product-detail copy and structure.
+3. Update shared listing logic in `assets/js/products-render.js` only if home / catalog / legacy behavior changes.
 
 ## Deployment (Nginx)
 Use `/new` as site root for direct static hosting.

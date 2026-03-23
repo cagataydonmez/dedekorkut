@@ -1,9 +1,9 @@
 # Asset Sources
 
-This redesigned site reuses images directly from the existing repository path `/assets/images/`.
-No additional copied image files are required in `/new/assets/images/`.
+This redesigned site now ships with local copies of the brand and product images it depends on.
+The production bundle uses `/new/assets/images/` so the site no longer depends on the legacy root-level image directory at runtime.
 
-| Used file (from `/assets/images/`) | Source URL | License |
+| Used file (copied into `/new/assets/images/`) | Source URL | License |
 |---|---|---|
 | logowhite400px-400x66.png | https://www.dedekorkutpedal.com/assets/images/logowhite400px-400x66.png | Brand-owned (original site asset) |
 | logo-dk-128x128-1.png | https://www.dedekorkutpedal.com/assets/images/logo-dk-128x128-1.png | Brand-owned (original site asset) |
