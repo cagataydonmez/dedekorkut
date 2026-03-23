@@ -18,10 +18,12 @@
       controls: ["Time / Speed", "Tape Age", "Head Distance", "Mix", "Feedback"],
       specs: ["Designed for repeatable live settings", "Mono operation", "Standard 9V pedalboard power"],
       images: [
-        "assets/images/ferromagnetic-face-800x800.jpg",
         "assets/images/ferromagnetic-5-780x780.jpg"
       ],
-      primaryImageAlt: "Ferromagnetic pedal close-up centered on the faceplate, knobs, and labeling.",
+      stageImage: "assets/images/ferromagnetic-product-page5-2000x1333.jpeg",
+      stageAlt: "Ferromagnetic pedal shown in a warmer studio-style product photograph with the enclosure and knobs lit from above.",
+      stageTags: ["Tape", "Rhythm", "Texture"],
+      primaryImageAlt: "Ferromagnetic pedal angled detail view highlighting the enclosure finish and switch layout.",
       galleryAlts: [
         "Ferromagnetic pedal front view showing the full control layout.",
         "Ferromagnetic pedal angled detail view highlighting the enclosure finish and switch layout."
@@ -47,6 +49,9 @@
       images: [
         "assets/images/reverberant-780x780.jpg"
       ],
+      stageImage: "assets/images/reverberant-2000x1333.jpg",
+      stageAlt: "Reverberant pedal photographed from the front on a darker surface with more surrounding space.",
+      stageTags: ["Hall", "Plate", "Shimmer"],
       primaryImageAlt: "Reverberant pedal front view showing five controls for decay, pre-delay, tone, space, and mix.",
       galleryAlts: [
         "Reverberant pedal front view with the full reverb control layout."
@@ -72,6 +77,9 @@
       images: [
         "assets/images/dynamictremolo-780x780.jpg"
       ],
+      stageImage: "assets/images/dynamictremolo_snapshot1.JPG",
+      stageAlt: "Dynamic Tremolo pedal photographed in a more candid workshop-style snapshot.",
+      stageTags: ["Touch", "Pulse", "Space"],
       primaryImageAlt: "Dynamic Tremolo pedal front view with modulation and reverb controls.",
       galleryAlts: [
         "Dynamic Tremolo pedal front view showing its control layout and footswitch."
@@ -98,6 +106,7 @@
       images: [
         "assets/images/crowdedchorus-780x780.jpg"
       ],
+      stageTags: ["Width", "Swirl", "Dynamic"],
       primaryImageAlt: "Crowded Chorus pedal front view showing chorus and vibrato controls with two mode toggles.",
       galleryAlts: [
         "Crowded Chorus pedal front view with its modulation controls and toggle switches."
@@ -124,6 +133,7 @@
       images: [
         "assets/images/manyphasedgod-780x780.jpg"
       ],
+      stageTags: ["Sweep", "Feedback", "Motion"],
       primaryImageAlt: "Many-Phased God phaser pedal front view showing control knobs and mode toggles.",
       galleryAlts: [
         "Many-Phased God pedal front view with phaser controls and toggle modes."
